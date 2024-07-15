@@ -1,2 +1,4 @@
 # holbertonschool-printf
-printf proyect 
+This is a brief summary if what the code of this "small" printf function intales:
+
+
