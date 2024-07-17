@@ -4,6 +4,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+int _printf(const char *format, ...);
+
 /**
  * _putchar - Writes the character c
  * @c: Character to print
@@ -15,4 +17,5 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
 #endif
