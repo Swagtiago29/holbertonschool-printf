@@ -5,11 +5,9 @@
 
 int _printf(const char *format, ...)
 {
-int i;
-int o;
+int i, o, counter = 0;
 va_list args;
 char *str;
-int counter = 0;
 va_start(args, format);
 
 for (i = 0; format[i] != '\0'; i++)
@@ -25,6 +23,8 @@ for (i = 0; format[i] != '\0'; i++)
 			case 's':
 				i++;
 				str = (va_arg(args, char *));
+				if (str == NULL)
+
 				for (o = 0; str[o] != '\0'; o++)
 				{	
 					_putchar(str[o]);
@@ -32,10 +32,8 @@ for (i = 0; format[i] != '\0'; i++)
 				}	
 				break;
 			case '%':
-				{
 				_putchar('%');
 				counter++;
-				}
 				break;
 		}
 	else
