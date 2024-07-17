@@ -24,7 +24,7 @@ for (i = 0; format[i] != '\0'; i++)
 				str = (va_arg(args, char *));
 				if (str == NULL)
 				{
-					write(1, "(null)", 6) && conter += 4;
+					write(1, "(null)", 6) && counter += 4;
 					break;
 				}
 				for (o = 0; str[o] != '\0'; o++)
