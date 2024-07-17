@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "aux_func.h"
 #include <stdarg.h>
@@ -24,7 +23,10 @@ for (i = 0; format[i] != '\0'; i++)
 				i++;
 				str = (va_arg(args, char *));
 				if (str == NULL)
-
+				{
+					write(1, "(null)", 6);
+					break;
+				}
 				for (o = 0; str[o] != '\0'; o++)
 				{	
 					_putchar(str[o]);
