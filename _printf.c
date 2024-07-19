@@ -1,6 +1,12 @@
 #include <stdlib.h>
 #include "aux_func.h"
 #include <stdarg.h>
+/**
+ * _printf - entry point, where the function prints something
+ *
+ * @format: thing to print with the funtion
+ * Return: lenght of what was printed or -1
+ */
 int _printf(const char *format, ...)
 {
 	int i, counter = 0;
@@ -25,19 +31,15 @@ int _printf(const char *format, ...)
 						counter += write(1, "(null)", 6);
 						break;
 					}
-					else
-					{
-						counter += print_string(str);
-						break;
-					}
+					counter += print_string(str);
+					break;
 				case '%':
 					counter += _putchar('%');
 					break;
 				default:
-					if(format[i] == '\0')
+					if (format[i] == '\0')
 						return (-1);
-					else
-						counter += _putchar('%') + counter + _putchar(format[i]);
+					counter += _putchar('%') + counter + _putchar(format[i]);
 			}
 		}
 		else
