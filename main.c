@@ -12,7 +12,11 @@ int main(void)
 {
     int len;
     int len2;
-    
+    int pepe;
+    int pepa;
+    int pipi;
+    int papa;
+
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
     _printf("Length:[%d, %i]\n", len, len);
@@ -32,10 +36,11 @@ int main(void)
     printf("%");
     _printf("%!\n");
     printf("%!\n");
-    _printf("%d\n", 1024);
-    printf("%d\n", 1024);
-    _printf("%d\n", -1024);
-    printf("%d\n", -1024);
+    papa = _printf("%d\n", 1024);
+    pipi = printf("%d\n", 1024);
+    pepe = _printf("%d\n", -1024);
+    pepa = printf("%d\n", -1024);
+    _printf("%d%d%d%d\n", papa, pipi, pepe, pepa);
     _printf("%K\n");
     printf("%K\n");
     _printf("Len:[%d]\n", len);

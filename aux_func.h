@@ -45,12 +45,11 @@ int print_num(int n)
         if (n >= 0)
                 if (n / 10 != 0)
                 {
-		   	print_num(n / 10);
-                        write (1, &o, 1);
-                        con++;
+		   	con += print_num(n / 10);
+                        con += write (1, &o, 1);
 		}
 	if (n / 10 == 0)
-		write (1, &o, 1);
+		con += write (1, &o, 1);
         return (con);
 }
 #endif
