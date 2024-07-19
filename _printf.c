@@ -4,7 +4,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i, o, counter = 0;
+	int i, counter = 0;
 	va_list args;
 	char *str;
 
@@ -12,34 +12,30 @@ int _printf(const char *format, ...)
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
-			switch (format[i + 1])
+		{	i++;
+			switch (format[i])
 			{
 				case 'c':
-					i++;
-					_putchar(va_arg(args, int));
-					counter++;
+					counter += _putchar(va_arg(args, int));
 					break;
 				case 's':
-					i++;
-					str = (va_arg(args, char *));
+					str = va_arg(args, char *);
 					if (str == NULL)
 					{
-						write(1, "(null)", 6);
-						counter += 6;
+						counter += write(1, "(null)", 6);
 						break;
 					}
-					for (o = 0; str[o] != '\0'; o++)
+					else
 					{
-						_putchar(str[o]);
-						counter++;
+						counter += print_string(str);
+						break;
 					}
-					break;
 				case '%':
-					i++;
 					_putchar('%');
 					counter++;
 					break;
 			}
+		}
 		else
 		{
 			_putchar(format[i]);
