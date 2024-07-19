@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <limits.h>
 
 int _printf(const char *format, ...);
 
@@ -39,8 +40,14 @@ int print_num(int n)
         
         if (n < 0)
         {
-                con += _putchar('-');
-                con += print_num(-n);
+                if (n == INT_MIN)
+			con += write(1, "-2147483648", 10);
+		
+		else
+		{
+			con += _putchar('-');
+                	con += print_num(-n);
+		}
         }
         if (n >= 0)
                 if (n / 10 != 0)
