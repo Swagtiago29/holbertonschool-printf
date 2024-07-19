@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "aux_func.h"
 #include <stdarg.h>
-
 int _printf(const char *format, ...)
 {
 	int i, counter = 0;
@@ -31,9 +30,16 @@ int _printf(const char *format, ...)
 						break;
 					}
 				case '%':
-					_putchar('%');
-					counter++;
+					counter += _putchar('%');
 					break;
+				default:
+					if(format[i] == '\0')
+						return (-1);
+					else
+					{	
+						counter += _putchar('%');
+						counter += _putchar(format[i]);
+					}
 			}
 		}
 		else
