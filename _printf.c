@@ -11,7 +11,8 @@ int _printf(const char *format, ...)
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
-		{	i++;
+		{
+			i++;
 			switch (format[i])
 			{
 				case 'c':
@@ -36,17 +37,11 @@ int _printf(const char *format, ...)
 					if(format[i] == '\0')
 						return (-1);
 					else
-					{	
-						counter += _putchar('%');
-						counter += _putchar(format[i]);
-					}
+						counter += _putchar('%') + counter + _putchar(format[i]);
 			}
 		}
 		else
-		{
-			_putchar(format[i]);
-				counter++;
-		}
+			counter += _putchar(format[i]);
 	}
 	va_end(args);
 	return (counter);
