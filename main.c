@@ -32,6 +32,10 @@ int main(void)
     printf("%");
     _printf("%!\n");
     printf("%!\n");
+    _printf("%d\n", 1024);
+    printf("%d\n", 1024);
+    _printf("%d\n", -1024);
+    printf("%d\n", -1024);
     _printf("%K\n");
     printf("%K\n");
     _printf("Len:[%d]\n", len);

@@ -32,4 +32,25 @@ int print_string(char *string)
 
 	return (i);
 }
+int print_num(int n)
+{
+	int con = 0;
+        int o = n % 10 + '0';
+        
+        if (n < 0)
+        {
+                con += _putchar('-');
+                con += print_num(-n);
+        }
+        if (n >= 0)
+                if (n / 10 != 0)
+                {
+		   	print_num(n / 10);
+                        write (1, &o, 1);
+                        con++;
+		}
+	if (n / 10 == 0)
+		write (1, &o, 1);
+        return (con);
+}
 #endif

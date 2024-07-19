@@ -21,6 +21,10 @@ int _printf(const char *format, ...)
 			i++;
 			switch (format[i])
 			{
+				case 'i':
+				case 'd':
+					counter += print_num(va_arg(args, int));
+					break;
 				case 'c':
 					counter += _putchar(va_arg(args, int));
 					break;
