@@ -41,7 +41,7 @@ int print_num(int n)
         if (n < 0)
         {
                 if (n == INT_MIN)
-			con += write(1, "-2147483648", 10);
+			con += write(1, "-2147483648", 11);
 		
 		else
 		{

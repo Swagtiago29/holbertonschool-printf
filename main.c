@@ -41,6 +41,8 @@ int main(void)
     pepe = _printf("%d\n", -1024);
     pepa = printf("%d\n", -1024);
     _printf("%d%d%d%d\n", papa, pipi, pepe, pepa);
+    _printf("%d\n", INT_MIN);
+    printf("%d\n", INT_MIN);
     _printf("%K\n");
     printf("%K\n");
     _printf("Len:[%d]\n", len);
