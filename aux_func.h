@@ -35,14 +35,13 @@ int print_string(char *string)
 }
 int print_num(int n)
 {
-	int con = 0;
-        int o = n % 10 + '0';
-        
+	long int con = 0;
+        long int o = n % 10 + '0';
+
         if (n < 0)
         {
                 if (n == INT_MIN)
 			con += write(1, "-2147483648", 11);
-		
 		else
 		{
 			con += _putchar('-');
@@ -56,7 +55,14 @@ int print_num(int n)
                         con += write (1, &o, 1);
 		}
 	if (n / 10 == 0)
+	{
+		if (o < 48)
+		{
+			o -= '0';
+			o *= -1;
+		}
 		con += write (1, &o, 1);
+	}
         return (con);
 }
 #endif

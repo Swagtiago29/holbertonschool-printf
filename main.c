@@ -43,6 +43,8 @@ int main(void)
     _printf("%d%d%d%d\n", papa, pipi, pepe, pepa);
     _printf("%d\n", INT_MIN);
     printf("%d\n", INT_MIN);
+    _printf("%d + %d = %d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
+    printf("%d + %d = %d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
     _printf("%K\n");
     printf("%K\n");
     _printf("Len:[%d]\n", len);
