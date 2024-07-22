@@ -47,3 +47,5 @@ examples of use
 contributors
 important concepts
 
+<h3> Contributors </h3>
+<p>This project was done by Santiago Ramos and Bruno Salle from Holbeton Uruguay cohort 24, thank you for reading. </p>
