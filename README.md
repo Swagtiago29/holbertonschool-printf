@@ -21,7 +21,7 @@
 - 'aux_func.h': File that contains necessary funtions that '_printf' may call upon on usage.
 - '_printf.c': Leading file that contains the logic behind the function.
   
-<h2 align="center"> Return Value </h2>
+<h3> Return Value </h3>
 
 <p>  This function returns an int equivalent to the numbers of characters printed. The function may return -1 when an Error ocurrs.
 
@@ -29,10 +29,20 @@ Example: this code `_printf("Example return.");` would print and return : `Examp
 
 Error Example: this code `_printf("%");` would return -1 </p>
 
-File Description 
-Flag characters que implementamos
+<h3> Flag Characters Implemented </h3>
+
+| Flag character | Usage |
+| ----------- | ----------- |
+| c | print a character |
+| s | print a string |
+| % | print '%' |
+| d | print an int |
+| i | print an int |
+
+![_printfdiagrama drawio](https://github.com/user-attachments/assets/701b017c-d863-4925-bc56-40ed6a8e9fb4)
+
+
 How to use it
-flowchart
 examples of use
 contributors
 important concepts
