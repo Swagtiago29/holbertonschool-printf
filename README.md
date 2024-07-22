@@ -8,3 +8,13 @@ This repository houses our journey into creating a custom printf function in C, 
 * Style Standards: We follow the Betty style guidelines using betty-style.pl and betty-doc.pl.
 * Coding Principles: We tried to avoid global variables and keep each file tidy with no more than 5 functions.
 * Testing Setup: We've got a handy main.c for testing, but remember not to push your version—it might differ from ours.
+
+
+Return value
+File Description 
+Flag characters, que implementamos
+How to use it
+flowchart
+examples of use
+contributors
+important concepts
