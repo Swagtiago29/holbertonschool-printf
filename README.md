@@ -21,7 +21,10 @@
 - 'aux_func.h': File that contains necessary funtions that '_printf' may call upon on usage.
 - '_printf.c': Leading file that contains the logic behind the function.
 
-![Diagrama sin título drawio](https://github.com/user-attachments/assets/9d779fdc-e665-415f-8ac8-33d5c219859c)
+<h2  align="center">Flow Chart</h2>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9d779fdc-e665-415f-8ac8-33d5c219859c" alt="Diagrama sin título drawio">
+</p>
 
 <h3> Return Value </h3>
 
