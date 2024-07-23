@@ -26,7 +26,7 @@
   <img src="https://github.com/user-attachments/assets/9d779fdc-e665-415f-8ac8-33d5c219859c" alt="Diagrama sin título drawio">
 </p>
 
-<h3> Return Value </h3>
+<h2 align="center"> Return Value </h2>
 
 <p>  This function returns an int equivalent to the numbers of characters printed. The function may return -1 when an Error ocurrs.
 
@@ -34,7 +34,7 @@ Example: this code `_printf("Example return.");` would print and return : `Examp
 
 Error Example: this code `_printf("%");` would return -1 </p>
 
-<h3> Flag Characters Implemented </h3>
+<h2 align="center"> Flag Characters Implemented </h2>
 
 | Flag character | Usage |
 | ----------- | ----------- |
