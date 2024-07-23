@@ -38,14 +38,26 @@ Error Example: this code `_printf("%");` would return -1 </p>
 | % | print '%' |
 | d | print an int |
 | i | print an int |
+<h2  align="center">Examples of Use</h2>
+
+<p>
+  Here are some aplication examples:
+  
+`_printf("Let's try to printf a simple sentence.\n");`  output: Let's try to printf a simple sentence.
+
+`_printf("Character:[%c]\n", 'H');`  output: Character [H]
+
+`_printf("String:[%s]\n", "I am a string !");`  output: I am a String 
+
+`_printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", " Please wait", '\n');`  output: Loading ... 99 Please Wait
+
+`_printf("%d\n", -1024);`  output: -1024
+</p>
 
 ![_printfdiagrama drawio](https://github.com/user-attachments/assets/701b017c-d863-4925-bc56-40ed6a8e9fb4)
 
 
-How to use it
-examples of use
-contributors
-important concepts
 
 <h3> Contributors </h3>
 <p>This project was done by Santiago Ramos and Bruno Salle from Holbeton Uruguay cohort 24, thank you for reading. </p>
+<img src="https://ih1.redbubble.net/image.649622329.8563/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" width="80" height="100">
