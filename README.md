@@ -1,8 +1,8 @@
 <h1  align="center"> Welcome To Our Printf Project! </h1>
 <p>   This repository houses our journey into creating a custom printf function in C, designed according to Holberton School's standards. Our goal is to replicate the functionality of the standard printf while focusing on clarity, efficiency, and adherence to best coding practices. </p>
 
-<h2>Description</h2>
-
+<h2 allign="center">PrintF Description</h2>
+<p>The _printf() function processes a variable number of arguments. It takes a string parameter named "format" that defines how additional arguments are formatted and displayed. This format string can include special characters such as '\n' (new line), '\b' (backspace), and '\t' (tab). It also uses conversion control characters starting with '%' to specify how each argument contributes to the final output message.</p>
 
   
 <h2  align="center">What We're Working With</h2>  
