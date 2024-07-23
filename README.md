@@ -20,7 +20,9 @@
 - 'main.c': File that contains some of the test cases for the "_printf" function.
 - 'aux_func.h': File that contains necessary funtions that '_printf' may call upon on usage.
 - '_printf.c': Leading file that contains the logic behind the function.
-  
+
+![Diagrama sin título drawio](https://github.com/user-attachments/assets/9d779fdc-e665-415f-8ac8-33d5c219859c)
+
 <h3> Return Value </h3>
 
 <p>  This function returns an int equivalent to the numbers of characters printed. The function may return -1 when an Error ocurrs.
@@ -53,9 +55,6 @@ Error Example: this code `_printf("%");` would return -1 </p>
 
 `_printf("%d\n", -1024);`  output: -1024
 </p>
-
-![_printfdiagrama drawio](https://github.com/user-attachments/assets/701b017c-d863-4925-bc56-40ed6a8e9fb4)
-
 
 
 <h3> Contributors </h3>
